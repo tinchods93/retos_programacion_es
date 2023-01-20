@@ -13,7 +13,6 @@ const getLowerSequenceFromCache = (iterationsInput: number): Number[] => {
 
   attributes.forEach((att) => {
     const diff = Math.abs(iterationsInput - Number(att));
-    // console.log('MARTIN_LOG=>', { att,attNumber:Number(att),iterationsInput, diff, lowestDif });
     if (Number(att) < iterationsInput && diff < lowestDif.diff) {
       lowestDif = {
         index: att,
